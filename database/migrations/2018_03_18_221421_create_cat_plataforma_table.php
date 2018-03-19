@@ -17,7 +17,6 @@ class CreateCatPlataformaTable extends Migration
             $table->increments('id');
             $table->string('nombre', 50);
             $table->string('descripcion', 250);
-            $table->date('anio');
             $table->timestamps();
         });
     }

@@ -15,6 +15,7 @@ class CreatePivVideojuegoPlataformaTable extends Migration
     {
         Schema::create('piv_videojuego_plataforma', function (Blueprint $table) {
             $table->increments('id');
+            $table->boolean('status');
             $table->integer('idVideojuego')->unsigned();
             $table->integer('idPlataforma')->unsigned();
             $table->timestamps();
